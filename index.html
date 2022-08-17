@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="app"> 
+        <h4>TODO APP</h4>
+        <div id="addNew"
+        data-bs-toggle="modal"
+        data-bs-target="#form">
+    <span>Add New Task</span>
+    <i class="bi bi-plus"></i>
+    </div>
+        <div class="text-center my-3" >Task</div>
+        <div id="tasks">
+
+        </div>
+        <!-- modal -->
+        
+<form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Task Title</p>
+          <input type="text" class="form-control" id="textInput" name="task title">
+          <div id="msg"></div>
+          
+          <p class="mt-2">Due Date</p>
+          <input type="date" class="form-control" id="dateInput" name="date">
+
+          <p class="mt-2">Discription</p>
+          <textarea name="disc" id="textArea" cols="30" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="cancel" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="add" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+</form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
